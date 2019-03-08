@@ -1,0 +1,53 @@
+{
+  "name": "time-context",
+  "version": "1.0.0",
+  "description": "現在時刻置き換えモジュール",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "tslint \"src/**/*.ts\" --project tsconfig.json",
+    "build": "rimraf dist && tsc",
+    "test-spec": "mocha dist/**/*.spec.js -R spec --bail",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- \"dist/**/*.spec.js\" -R spec --bail",
+    "test": "npm run build && npm run lint && npm run test-cov",
+    "prepare": "npm run build"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkusu/time-context.git"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "mock",
+    "date",
+    "time"
+  ],
+  "author": {
+    "name": "Wakai Yutaka",
+    "email": "lnkusuin@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inkusu/time-context/issues"
+  },
+  "homepage": "https://github.com/inkusu/time-context#readme",
+  "peerDependencies": {
+    "typescript": ">=2.0"
+  },
+  "dependencies": {
+    "@types/mockdate": "^2.0.0",
+    "consola": "^2.5.6",
+    "mockdate": "^2.0.2",
+    "moment": "^2.24.0",
+    "typescript": "^3.3.3333"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.9",
+    "jest": "^24.3.1",
+    "rimraf": "^2.6.3"
+  }
+}

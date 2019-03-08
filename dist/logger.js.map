@@ -1,0 +1,1 @@
+{"version":3,"file":"logger.js","sourceRoot":"","sources":["../src/logger.ts"],"names":[],"mappings":";;AAAA,qCAA8B;AAE9B,kBAAgB,CAAC,IAAY,EAAE,EAAE,CAAC,iBAAO,CAAC,SAAS,CAAC,OAAO,CAAC,MAAM,CAAC,CAAC,QAAQ,CAAC,IAAI,CAAC,CAAC,CAAC","sourcesContent":["import consola from 'consola';\n\nexport  default (name: string) => consola.withScope(require(\"path\").basename(name));"]}
