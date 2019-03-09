@@ -1,0 +1,56 @@
+{
+  "name": "time-context",
+  "version": "1.0.3",
+  "description": "現在時刻置き換えモジュール",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "tslint \"src/**/*.ts\" --fix --project tsconfig.json",
+    "build": "rimraf dist && tsc",
+    "test-spec": "npx jest --coverage",
+    "test-cov": "",
+    "test": "npm run build && npm run lint && npm run test-cov",
+    "prepare": "npm run build"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkusu/time-context.git"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "mock",
+    "date",
+    "time"
+  ],
+  "author": {
+    "name": "Wakai Yutaka",
+    "email": "lnkusuin@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/inkusu/time-context/issues"
+  },
+  "homepage": "https://github.com/inkusu/time-context#readme",
+  "peerDependencies": {
+    "typescript": ">=2.0"
+  },
+  "dependencies": {
+    "@types/mockdate": "^2.0.0",
+    "consola": "^2.5.6",
+    "mockdate": "^2.0.2",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.9",
+    "jest": "^24.3.1",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.13.1",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.3.3333"
+  }
+}
