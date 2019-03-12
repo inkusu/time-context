@@ -27,7 +27,7 @@ class TimeContext {
   protected time: moment.Moment = moment();
   protected isFirst: boolean = true;
 
-  public constructor(from: string, to: string) {
+  public constructor(from: string = moment().toISOString(), to: string = moment().toISOString()) {
       this.from = from;
       this.to = to;
 

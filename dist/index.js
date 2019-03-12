@@ -12,7 +12,7 @@ const randomDate = (start, end) => {
     return moment(date.toISOString());
 };
 class TimeContext {
-    constructor(from, to) {
+    constructor(from = moment().toISOString(), to = moment().toISOString()) {
         this.from = "";
         this.to = "";
         this.time = moment();

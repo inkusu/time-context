@@ -4,7 +4,7 @@ declare class TimeContext {
     protected to: string;
     protected time: moment.Moment;
     protected isFirst: boolean;
-    constructor(from: string, to: string);
+    constructor(from?: string, to?: string);
     setIncrementTime(): void;
     getTime(): moment.Moment;
     change(callback: () => void): Promise<any>;

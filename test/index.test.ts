@@ -8,6 +8,13 @@ const to = "2019-01-31 23:59:59";
 
 const timeContext = new TimeContext(from, to);
 
+test("コンストラクタが引数無しで初期化できることを確認する", () => {
+    const _timeContext = new TimeContext();
+
+    expect(moment(_timeContext.getTime()).isSame(moment().add(1, "day"), "day")).toBeFalsy();
+    expect(moment(_timeContext.getTime()).isSame(new Date(), "day")).toBeTruthy();
+});
+
 test("指定期間内の日付が生成されていることを確認", async (done) => {
     timeContext.change(() => {
         expect(moment(new Date()).isBetween(moment(from), moment(to))).toBe(true);
