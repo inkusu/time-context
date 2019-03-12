@@ -1,6 +1,6 @@
 {
   "name": "time-context",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "現在時刻置き換えモジュール",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
