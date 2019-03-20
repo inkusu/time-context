@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - "10"
+  - "11"
+sudo: false
+cache:
+  directories:
+    - node_modules
+before_install:
+  # npm install
+  - |
+    npm install
+script:
+  # Run test script
+  - npm run prepare
+after_script:
+  - |
+    # Upload coverage to codecov
+    npm run codecov
+  # - |
+    # Upload package to npm
+    # npm run push
+
+
