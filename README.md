@@ -1,6 +1,7 @@
 # time-context
 
 <p align="center">
+  <a href="https://travis-ci.org/inkusu/time-context"><img src="https://travis-ci.org/inkusu/time-context.svg?branch=master" alt="travis"></a>
   <a href="https://codecov.io/gh/inkusu/time-context"><img src="https://codecov.io/gh/inkusu/time-context/branch/master/graph/badge.svg" /></a>
   <a href="https://www.npmjs.com/package/time-context"><img src="https://badgen.net/npm/dm/time-context" alt="download"></a>
   <a href="https://www.npmjs.com/package/time-context"><img src="https://badgen.net/npm/v/time-context" alt="version"></a>
