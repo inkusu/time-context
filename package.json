@@ -8,7 +8,6 @@
     "lint": "tslint \"src/**/*.ts\" --fix --project tsconfig.json",
     "build": "rimraf dist && tsc",
     "test-spec": "npx jest --coverage",
-    "test-cov": "",
     "test": "npm run build && npm run lint && npm run test-cov",
     "prepare": "npm run build",
     "push": "npm run lint && npm run test-spec && git push origin master && npm version patch &&  npm publish"

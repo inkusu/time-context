@@ -1,5 +1,12 @@
 # time-context
 
+<p align="center">
+  <a href="https://codecov.io/gh/inkusu/time-context"><img src="https://codecov.io/gh/inkusu/time-context/branch/master/graph/badge.svg" /></a>
+  <a href="https://www.npmjs.com/package/nuxt"><img src="https://badgen.net/npm/dm/time-context" alt="download"></a>
+  <a href="https://www.npmjs.com/package/nuxt"><img src="https://badgen.net/npm/v/time-context" alt="version"></a>
+  <a href="https://www.npmjs.com/package/nuxt"><img src="https://badgen.net/npm/license/time-context" alt="License"></a>
+ </p>
+ 
 ### 使い方
 
 ```javascript
