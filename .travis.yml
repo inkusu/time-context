@@ -1,24 +1,25 @@
 language: node_js
 node_js:
-  - "10"
-  - "11"
+- '10'
+- '11'
 sudo: false
 cache:
   directories:
-    - node_modules
+  - node_modules
+
 before_install:
-  # npm install
-  - |
-    npm install
+- npm install
+
 script:
-  # Run test script
-  - npm run prepare
+- npm run prepare
+
 after_script:
-  - |
-    # Upload coverage to codecov
-    npm run codecov
-  # - |
-    # Upload package to npm
-    # npm run push
+- |
+  # Upload coverage to codecov
+  npm run codecov
 
-
+deploy:
+  provider: npm
+  email: lnkusuin@gmail.com
+  api_key:
+    secure: cvzqnMLnG8t4coyxxsqnWYcQYj5uya3iQtekQdp6nvXYc7asveUteB5yZiETIAWggD8xf0vKcYrH8AAhE+Vema1kjbCAThE+A961CJOoSqlQ4L0Xwrodw+EU97mc//LJf7bqxjpbIcJW3uKdbVGW4v0YxE1SQGnG5R/MiHN0bo5ZFU8bZXFvmk3F+z1YKgq7fb4jZ0sat61qxXPluT05m25Aafu5WwWRueJk4OfajnpKpuMDCKmHAZ4IJ4mAnD8zFipswsq5E7xodPvf7U9yTkgxjkpDFYblWk3W+OiYzDh3FBV8EqMz3Mdc5FOb1Q9XsBRGyg6oNG3LKTnBaDNJRmmvvZn00CyunNFQ9yhAEqOr/qCR/h5hwDgmVc0zBnktBmX89Aq3TjaYF3cLUzwsU6ohF4Fv+LdIucfwcLeUW2cNHCkb/ksD8SEC8UG3TB4xuHu0QyY1phijSoGnAW6R2Ny1cQqGFZVsWZp50exFvmvW3wE3GwyMvuki03h0lPT2f/pUEX+ca444QOQCFjU+LqSY0HmrFEg3d+dhC+XafZej9XWJmpQuznh3oEbPRa/Br7gyFGNWkP/SiUAocbmCm5VDK/iFtmxaqvywfEDSiYDfkE5oISlmZqd4mgWwBapnyjrGX6rj2HWWkdb5xI/yBUDtOJ7As9EZ33ZseJoedSo=

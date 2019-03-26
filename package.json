@@ -1,6 +1,6 @@
 {
   "name": "time-context",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "現在時刻置き換えモジュール",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,7 @@
     "test-spec": "npx jest --coverage",
     "prepare": "npm run build && npm run lint",
     "codecov": "codecov",
-    "push": "npm run lint && npm run test-spec && git push origin master && npm version patch &&  npm publish"
+    "publish": "npm version patch && git push origin master"
   },
   "engines": {
     "node": ">=10.0.0"
